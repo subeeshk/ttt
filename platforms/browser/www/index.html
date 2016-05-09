@@ -96,7 +96,7 @@
             <!-- Button -->
             <p class="btn-app-store">
               <a class="btn btn-danger btn-lg" href="#fakelinks">
-                <img src="images/btn-app-store.png" alt="">
+                <img id="smallImage" src="" alt="">
               </a>
             </p> <!-- /.btn-app-store -->
 
@@ -106,8 +106,13 @@
 
             <!-- Images showcase -->
             <figure>
-              <img class="img-iPhone" src="images/iphone/2.png" alt="">
+              <img id="largeImage" class="img-iPhone" src="" alt="" width="100%" height="100%">
             </figure>
+
+            <button onclick="capturePhoto();">Capture Photo</button> <br>
+    <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+    <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
 
           </div> <!-- /.col-md-5 -->
           
